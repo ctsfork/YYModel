@@ -1,3 +1,32 @@
+# 更新修复
+
+一：更新
+1. 修复警告 
+2. 支持Xcode14 
+3. 添加SPM支持 
+
+二：使用方法
+
+CocoaPods：
+
+```
+主分支：
+pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git'
+指定tag：
+pod 'YYModel', :git => 'https://github.com/ctsfork/YYModel.git', :tag => 'v1.0.5'
+
+
+注意：
+    pod指定tag版本时需要带上v，比如: tag => 'v1.0.5‘ 和 tag => '1.0.5’ ，前者能正确取到1.0.5的版本而后者只能取到1.0.4 的版本。
+
+```
+Swift Package Manager：
+```
+dependencies: [
+    .package(url: "https://github.com/ctsfork/YYModel.git", .upToNextMajor(from: "1.0.5"))
+]
+```
+
 YYModel
 ==============
 
